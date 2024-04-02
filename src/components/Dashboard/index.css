@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f0f0f0; /* lighter background */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main Section */
+.main {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limiting width for larger screens */
+    background: #fff; /* white background */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.main-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-top h1 {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-top i {
+    color: rgb(110, 109, 109);
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.users .card {
+    flex: 1;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Adjust based on the number of cards per row */
+    max-width: 300px; /* Limiting width for larger screens */
+}
+
+.users .card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.users .card h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.users .card p {
+    font-size: 12px;
+}
+
+/* Attendance List section */
+.attendance {
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.attendance-list {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff; /* white background */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+}
+
+table thead tr {
+    color: #fff;
+    background: #34af6d;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    padding: 5px;
+    border: 1px solid rgb(97, 142, 112);
+    text-align: center;
+    font-size: 12px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background: #f3f3f3;
+}
+
+.table tbody tr.active {
+    font-weight: bold;
+    color: #4ad489;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #4ad489;
+}
+
+/* Buttons */
+.table button {
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.table button.approve {
+    background-color: #007bff;
+    margin-right: 5px;
+    font-size: 10px;
+    padding: 6px;
+    color: #fff;
+}
+
+.table button.reject {
+    background-color: #dc3545;
+    font-size: 10px;
+    padding: 6px;
+    color: #fff;
+}
+
+.table button:hover {
+    filter: brightness(90%);
+}
+
+/* Approved Text */
+.table .approved-text {
+    background-color: #007bff; /* Blue background */
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .main-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-top h1 {
+        margin-bottom: 10px;
+    }
+
+    .main-top i {
+        margin-left: auto;
+    }
+
+    .users .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .users .card {
+        width: calc(100% - 20px);
+    }
+}
+
+.approve {
+    background-color: green;
+    color: white;
+}
+
+.reject {
+    background-color: red;
+    color: white;
+}

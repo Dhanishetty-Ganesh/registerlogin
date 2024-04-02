@@ -1,0 +1,104 @@
+/* Base styles for responsiveness */
+.admin-register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+/* Additional box after heading */
+.additional-box {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Form items */
+.form-items {
+  background-color: lightgreen;
+  padding: 30px;
+  border-radius: 8px;
+  width: 70vw;
+  max-width: 400px; /* Limit maximum width for better readability */
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 4px; /* Increase spacing between form groups */
+}
+
+/* Labels */
+label {
+  display: block; /* Display labels as blocks for separate lines */
+}
+.label-texts {
+  font-size: 12px;
+  margin: 0px;
+}
+.whatsapp-label {
+margin-top: 20px;
+}
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 12px;
+  margin-top: 5px; /* Add spacing between inputs */
+}
+
+/* Button */
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-start; /* Align button to the start of flex container */
+  margin-top: 10px; /* Add spacing above the button */
+}
+
+/* Media queries for responsiveness (unchanged) */
+/* ... */
+
+/* Paragraph 2 */
+.para-2 {
+  text-align: center;
+  color: black; /* Center-align the text */
+  margin-top: 20px; /* Add some top margin for spacing */
+}
+
+/* Styling for the link inside para-2 */
+.para-2 a {
+  color: blue; /* Set the color of the link text */
+  text-decoration: underline; /* Underline the link text */
+}
+.success-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+@media (max-width: 768px) {
+  .success-message {
+    font-size: 14px;
+    /* Additional responsive styles for smaller screens */
+  }
+}
